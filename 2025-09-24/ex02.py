@@ -1,4 +1,4 @@
-# gerar a mascara  -------  # deslocamento binario
+# Gerar a mascara  -------  # Deslocamento binario
 
 intCIDR = 24
 
