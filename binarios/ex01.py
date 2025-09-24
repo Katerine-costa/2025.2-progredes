@@ -1,19 +1,19 @@
 import sys
 
 try:
-    intvalor = int(input("digite um valor inteiro. "))
+   intValor = int(input('\nDigite um número inteiro: '))
 except ValueError:
-    sys.exit("valor inválido. digite outro valor.")
+   sys.exit('Valor inválido. Por favor, insira um número inteiro.')
 except KeyboardInterrupt:
-    sys.exit('\nPrograma interrompido pelo usuario.')
+   sys.exit('\nPrograma interrompido pelo usuário.')
 except Exception as erro:
-    sys.exit('Erro inesperado: {erro}')
+   sys.exit(f'Erro inesperado: {erro}')
 else:
-    # imprimir o valor binário do numero interio
-    print(f'\n{intvalor} em binário: {bin(intvalor)}\n')
+   # Imprimir o valor binário do número inteiro
+   print(f'\n{intValor} em Binário....: {bin(intValor)}')
 
-    intQuantidade = intvalor.bit_length()
+   # Imprimir o valor hexadecimal do número inteiro
+   print(f'{intValor} em Hexadecimal: {hex(intValor)}')  
 
-    binvalor = bin(intvalor)[2:]
-
-    if
+   # Imprimir o valor octal do número inteiro
+   print(f'{intValor} em Octal......: {oct(intValor)}\n')
