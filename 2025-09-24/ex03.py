@@ -6,4 +6,7 @@ intCIDR = 24
 
 intIP = int.from_bytes(bytes([int(x) for x in strIP.split('.')]) ,'big')
 
-intMascara = 0xFFFFFFFF >> (32 - intCIDR) << (32 - intCIDR) # forma simplificada
+intMask = 0xFFFFFFFF >> (32 - intCIDR) << (32 - intCIDR) # forma simplificada
+
+intIPRede = intIP & intMask
+
