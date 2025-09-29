@@ -31,3 +31,9 @@ strIPRede = '.'.join([str(x) for x in intIPRede.to_bytes(4)])
 
 # Exibe o endereço de rede em formato string
 print(strIPRede)  
+
+# ip Rede 
+
+intIPRede = intIP & intMascara
+print(f'{intIPRede:032b}')
+

@@ -1,1 +1,3 @@
-# 
+# ip Rede 
+
+intIPRede = int
