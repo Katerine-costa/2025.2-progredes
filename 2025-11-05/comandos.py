@@ -16,3 +16,4 @@ except requests.exceptions.RequestException as e:
 except Exception as e:
    print(f'\nERRO: {e}\n')
 else:
+   print(f'Status HTTP: {resposta.status_code} -> {resposta}')
